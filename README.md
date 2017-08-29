@@ -1,6 +1,12 @@
 # CarND-Controls-PID
 Self-Driving Car Engineer Nanodegree Program
+---
+# Reflection
+Very interesting project. The algorithm is simple, however I spent a lot of time tuning it. Initially, I implemented the Twiddle algorithm as mentioned in Sebastians class. However, even after struggling for a long time, I could not find the ideal parameters for steering coefficients.
 
+I used the following logic to come up with the coefficients
+* I assumed low integration error as this is a simulator environment. The simulator does not seem to have a steering bias
+* Tuned the Differential and Proportional gain to get a smoother drive. For certain combinations I found a lot of oscillating taking place around the curves. Setting the differential gain to a higher value seemed to help 
 ---
 
 ## Dependencies
